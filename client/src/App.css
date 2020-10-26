@@ -1,0 +1,13 @@
+input[name*="answer"] + span {
+  background-color: #eee;
+  padding: 12px 14px;
+  display: inline-block;
+  border-radius: 5%;
+  color: #222;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+input[name*="answer"]:checked + span {
+  background-color: #444;
+  color: white;
+}
