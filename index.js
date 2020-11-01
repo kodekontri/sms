@@ -1,6 +1,9 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-const morgan = require("morgan");
+if (process.env.NODE_ENV === "development") {
+  const morgan = require("morgan");
+}
+
 const dotenv = require("dotenv");
 const db = require("./config/db");
 
